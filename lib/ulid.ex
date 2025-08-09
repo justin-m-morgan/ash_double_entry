@@ -292,4 +292,7 @@ defmodule AshDoubleEntry.ULID do
   defp v(?Y), do: true
   defp v(?Z), do: true
   defp v(_), do: false
+
+  def graphql_type, do: :ulid
+  def graphql_input_type, do: :ulid
 end
